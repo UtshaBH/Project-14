@@ -11,9 +11,7 @@ function preload(){
   pink_balloonImage = loadImage("pink_balloon0.png");
   blue_balloonImage = loadImage("blue_balloon0.png");
 
-  //red_balloonImage = loadImage("red_balloon0.png");
-  //red_balloonImage = loadImage("redballoon0.png");
-  //red_balloonImage = loadImage("red_balloon0");
+ 
   red_balloonImage = loadImage("red_balloon0.png");
   
 }
@@ -56,9 +54,7 @@ function draw() {
    
 
 
-  // var select_balloon = Math.round(random(1,4));
-  // var select_balloon = random(1,4);
-  //var select_balloon = Math.round(random());
+
   var select_balloon = Math.round(random(1,4,2,3));
   
   if (World.frameCount % 100 == 0) {
@@ -78,7 +74,6 @@ function draw() {
 }
 
 
-// Creating  arrows for bow
  function createArrow() {
   var arrow= createSprite(100, 100, 60, 10);
   arrow.addImage(arrowImage);
